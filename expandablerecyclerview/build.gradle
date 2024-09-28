@@ -8,7 +8,7 @@ publish {
   groupId = 'com.karthikkompelli.expandablerecyclerview'
   artifactId = 'expandablerecyclerview'
   uploadName = 'ExpandableRecyclerview'
-  publishVersion = '1.0.5'
+  publishVersion = '1.5'
   desc = 'ExpandableRecyclerview'
   dryRun = false
   website = 'https://github.com/karthikkompelli/expandable-recycler-view'
