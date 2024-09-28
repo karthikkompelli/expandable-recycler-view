@@ -44,7 +44,7 @@ publishing {
     maven(MavenPublication) {
       groupId = 'com.karthikkompelli.expandablerecyclerview'
       artifactId = 'expandablerecyclerview'
-      version = "1.5"
+      version = "1.6"
       pom {
         description = 'ExpandableRecyclerview'
       }
