@@ -1,19 +1,20 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 //apply plugin: 'android-maven'
-apply plugin: 'com.novoda.bintray-release'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-
-publish {
-  userOrg = 'karthikkompelli'
-  groupId = 'com.karthikkompelli.expandablerecyclerview'
-  artifactId = 'expandablerecyclerview'
-  uploadName = 'ExpandableRecyclerview'
-  publishVersion = '1.5'
-  desc = 'ExpandableRecyclerview'
-  dryRun = false
-  website = 'https://github.com/karthikkompelli/expandable-recycler-view'
-}
+//apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
+//
+//publish {
+//  userOrg = 'karthikkompelli'
+//  groupId = 'com.karthikkompelli.expandablerecyclerview'
+//  artifactId = 'expandablerecyclerview'
+//  uploadName = 'ExpandableRecyclerview'
+//  publishVersion = '1.5'
+//  desc = 'ExpandableRecyclerview'
+//  dryRun = false
+//  website = 'https://github.com/karthikkompelli/expandable-recycler-view'
+//}
 //
 //ext {
 //  bintrayRepo = 'maven'
@@ -38,7 +39,21 @@ publish {
 //  licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
 //  allLicenses = ["Apache-2.0"]
 //}
-
+publishing {
+  publications {
+    maven(MavenPublication) {
+      groupId = 'com.karthikkompelli.expandablerecyclerview'
+      artifactId = 'expandablerecyclerview'
+      version = "1.5"
+      pom {
+        description = 'ExpandableRecyclerview'
+      }
+    }
+  }
+  repositories {
+    mavenLocal()
+  }
+}
 android {
   compileSdk 30
 
