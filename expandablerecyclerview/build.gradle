@@ -1,19 +1,19 @@
 apply plugin: 'com.android.library'
 //apply plugin: 'android-maven'
-//apply plugin: 'com.novoda.bintray-release'
-//apply plugin: 'com.github.dcendents.android-maven'
-//apply plugin: 'com.jfrog.bintray'
-//
-//publish {
-//  userOrg = 'karthikkompelli'
-//  groupId = 'com.karthikkompelli.expandablerecyclerview'
-//  artifactId = 'expandablerecyclerview'
-//  uploadName = 'ExpandableRecyclerview'
-//  publishVersion = '1.5'
-//  desc = 'ExpandableRecyclerview'
-//  dryRun = false
-//  website = 'https://github.com/karthikkompelli/expandable-recycler-view'
-//}
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+publish {
+  userOrg = 'karthikkompelli'
+  groupId = 'com.karthikkompelli.expandablerecyclerview'
+  artifactId = 'expandablerecyclerview'
+  uploadName = 'ExpandableRecyclerview'
+  publishVersion = '1.5'
+  desc = 'ExpandableRecyclerview'
+  dryRun = false
+  website = 'https://github.com/karthikkompelli/expandable-recycler-view'
+}
 //
 //ext {
 //  bintrayRepo = 'maven'
